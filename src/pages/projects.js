@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProjectCard from '../components/ProjectCard';
+import Layout from '@/components/layout';
 
 const project1_image = "./images/project1.png"
 const project2_image = "./images/project2.png"
@@ -9,7 +10,7 @@ const project3_image = "./images/project3.png"
 
 export default function Projects() {
     return (
-      <main>
+      <Layout>
         <Container fluid className="project-container">
           <h1 className="project-heading">
             My Recent <strong className="purple">Works </strong>
@@ -47,7 +48,7 @@ export default function Projects() {
             </Col>
           </Row>
         </Container>
-      </main>
+      </Layout>
     );
   }
   

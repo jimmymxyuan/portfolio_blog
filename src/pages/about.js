@@ -1,10 +1,11 @@
-import {Timeline} from "../components/timeline"
+import Timeline from "../components/timeline"
 import Container from 'react-bootstrap/Container';
+import Layout from '@/components/layout';
 import Head from "next/head";
 
 export default function About() {
     return (
-      <main>
+      <Layout>
         <Container className="content" >
             <div className="top-content">
                 <h1 style={{ paddingBottom: 15 }} className="heading">
@@ -19,7 +20,7 @@ export default function About() {
                 <Timeline />
             </div>
         </Container>
-      </main>
+      </Layout>
     );
   }
   

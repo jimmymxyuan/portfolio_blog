@@ -1,0 +1,133 @@
+/**
+ * Navigation bar
+ */
+ ul.navi {
+	font-family: Arial;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(41, 41, 41);
+	/*-webkit-box-shadow: 1px 1px 5px 1px #000000; */
+	/*box-shadow: 1px 1px 4px 1px #A0A0A0;*/
+}
+
+ul.navi li {float: right;}
+
+ul.navi li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  color: rgb(180, 180, 180);
+}
+
+ul.navi li a:hover:not(.active) {background-color: grey;}
+
+ul.navi li a.active {background-color: #ffffff;}
+
+ul.navi li.navi_left {float: left;}
+
+@media screen and (max-width: 400px) {
+ul.navi li.navi_right, 
+ul.navi li {float: none;}
+}
+
+/**
+ * Wave module
+ */
+
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+/**
+ * Footer bar
+ */
+
+ .footer {
+    font-family: Arial;
+    color: rgb(204, 204, 204);
+      background-color: rgb(41, 41, 41);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .footer_left {
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+  }
+  
+  .footer_right {
+    text-align: right;
+    padding: 0px 20px 0px 0px;
+  }
+
+  
+
+ul.social_media {
+    justify-content: center;
+    padding-top: 15px;
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  .social_media_icon {
+    text-align: center !important;
+    transform: scale(2);
+  }
+  
+  .social_media_icon a {
+    position: relative !important;
+    display: block;
+    justify-content: center;
+    color: white;
+    padding: 20px 20px 20px 20px;
+  }
+
+
+
+/**
+ * tsparticles - star effect
+ */
+
+ #tsparticles {
+    position: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+  }

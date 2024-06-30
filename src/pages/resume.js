@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import { AiOutlineDownload } from "react-icons/ai";
 import Image from 'react-bootstrap/image'
+import Layout from '@/components/layout';
 
 
 const pdf_url = "./resume/Jimmy_Yuan_Resume.pdf"
@@ -12,7 +13,7 @@ const pdf_img_2_url = "./resume/Jimmy_Yuan_Resume_2.png"
 
 export default function Resume() {
   return (
-    <main>
+    <Layout>
       <Container className="content" >
         <Row>
           <Image src = {pdf_img_1_url} alt="Jmmy Yuan Resume Page 1"/>
@@ -34,6 +35,6 @@ export default function Resume() {
           </Button>
         </Row>
       </Container>
-    </main>
+    </Layout>
   );
 }
