@@ -77,23 +77,23 @@ ul.navi li {float: none;}
  * Footer bar
  */
 
- .footer {
-    font-family: Arial;
-    color: rgb(204, 204, 204);
-      background-color: rgb(41, 41, 41);
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  .footer_left {
-    text-align: left;
-    padding: 0px 0px 0px 20px;
-  }
-  
-  .footer_right {
-    text-align: right;
-    padding: 0px 20px 0px 0px;
-  }
+ .footer_main {
+  font-family: Arial;
+  color: rgb(204, 204, 204);
+  background-color: rgb(41, 41, 41);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.footer_left {
+  text-align: left;
+  padding: 12px 0px 0px 20px;
+}
+
+.footer_right {
+  text-align: right;
+  padding: 12px 20px 0px 0px;
+}
 
   
 
@@ -115,7 +115,7 @@ ul.social_media {
     display: block;
     justify-content: center;
     color: white;
-    padding: 20px 20px 20px 20px;
+    padding: 15px 20px 5px 20px;
   }
 
 
@@ -124,7 +124,7 @@ ul.social_media {
  * tsparticles - star effect
  */
 
- #tsparticles {
+ .tsparticles {
     position: fixed !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;

@@ -1,10 +1,11 @@
+'use client'
 import React from "react"
 import Particles from "react-tsparticles"
+import styles from "@/styles/components.module.css"
 
 export default function Particle() {
     return (
-        <Particles
-          id="tsparticles"
+        <Particles className={styles.tsparticles}
           params={{
             particles: {
               number: {

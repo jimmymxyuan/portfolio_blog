@@ -41,7 +41,7 @@ div.timeline {
     
     /* The circles on the timeline */
     div.timeline_container_left::after {
-    left: 0;
+    left: 50;
     content: '';
     position: absolute;
     width: 25px;
@@ -56,7 +56,7 @@ div.timeline {
     
     /* The circles on the timeline */
     div.timeline_container_right::after {
-    left: 50%;
+    left: -2.8%;
     content: '';
     position: absolute;
     width: 25px;

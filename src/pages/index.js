@@ -1,10 +1,12 @@
 import Head from "next/head";
+import SSRProvider from 'react-bootstrap/SSRProvider';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Typewriter from "../components/Typewriter";
-import Wave from "../components/wave"
+import Typewriter from "@/components/Typewriter";
+import Wave from "@/components/wave"
 import Layout from '@/components/layout';
+
 
 const typeWriter = [
   "Automation Tester",
@@ -18,6 +20,7 @@ const typeWriter = [
 
 export default function Home() {
   return (
+    <SSRProvider>
     <Layout>
       <Head>
         <title>Port Jimmys</title>
@@ -77,5 +80,6 @@ export default function Home() {
         </Container>
       </main>
     </Layout>
+    </SSRProvider>
   );
 }
