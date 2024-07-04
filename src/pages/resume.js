@@ -25,17 +25,19 @@ export default function Resume() {
           <p></p>
         </Row>
         <Row className="justify-content-md-center">
-          <Col md="auto">
-            <Button
-              variant="primary"
-              href={pdf_url}
-              target="_blank"
-              style={{ maxWidth: "250px" }}
-            >
-              <AiOutlineDownload />
-              &nbsp;Download Resume
-            </Button>
-          </Col>
+          <div className="div_centre">
+            <Col md="auto">
+              <Button
+                variant="primary"
+                href={pdf_url}
+                target="_blank"
+                style={{ maxWidth: "250px" }}
+              >
+                <AiOutlineDownload />
+                &nbsp;Download Resume
+              </Button>
+            </Col>
+          </div>
         </Row>
       </Container>
     </Layout>

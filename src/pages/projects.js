@@ -11,7 +11,7 @@ const project3_image = "./images/project3.png"
 export default function Projects() {
     return (
       <Layout>
-        <Container fluid className="project-container">
+        <Container className="project-container">
           <h1 className="project-heading">
             My Recent <strong className="purple">Works </strong>
           </h1>
@@ -46,6 +46,9 @@ export default function Projects() {
                 demoLink="https://jimmystoolbox.com"
               />
             </Col>
+          </Row>
+          <Row className='empty_space'>
+
           </Row>
         </Container>
       </Layout>
