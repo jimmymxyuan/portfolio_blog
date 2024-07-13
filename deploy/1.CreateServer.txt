@@ -1,0 +1,122 @@
+RunInstances
+{
+  "MaxCount": 1,
+  "MinCount": 1,
+  "ImageId": "ami-0f06718ac552afe18",
+  "InstanceType": "t2.micro",
+  "EbsOptimized": false,
+  "BlockDeviceMappings": [
+    {
+      "DeviceName": "/dev/xvda",
+      "Ebs": {
+        "Encrypted": false,
+        "DeleteOnTermination": true,
+        "Iops": 3000,
+        "SnapshotId": "snap-0e5fb23b29bdb0a0c",
+        "VolumeSize": 15,
+        "VolumeType": "gp3",
+        "Throughput": 125
+      }
+    }
+  ],
+  "NetworkInterfaces": [
+    {
+      "AssociatePublicIpAddress": true,
+      "DeviceIndex": 0,
+      "Groups": [
+        "<groupId of the new security group created below>"
+      ]
+    }
+  ],
+  "TagSpecifications": [
+    {
+      "ResourceType": "instance",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "portfolio_server"
+        }
+      ]
+    }
+  ],
+  "MetadataOptions": {
+    "HttpEndpoint": "enabled",
+    "HttpPutResponseHopLimit": 2,
+    "HttpTokens": "required"
+  },
+  "PrivateDnsNameOptions": {
+    "HostnameType": "ip-name",
+    "EnableResourceNameDnsARecord": true,
+    "EnableResourceNameDnsAAAARecord": false
+  }
+}
+
+CreateSecurityGroup
+{
+  "MaxCount": 1,
+  "MinCount": 1,
+  "ImageId": "ami-0f06718ac552afe18",
+  "InstanceType": "t2.micro",
+  "EbsOptimized": false,
+  "BlockDeviceMappings": [
+    {
+      "DeviceName": "/dev/xvda",
+      "Ebs": {
+        "Encrypted": false,
+        "DeleteOnTermination": true,
+        "Iops": 3000,
+        "SnapshotId": "snap-0e5fb23b29bdb0a0c",
+        "VolumeSize": 15,
+        "VolumeType": "gp3",
+        "Throughput": 125
+      }
+    }
+  ],
+  "NetworkInterfaces": [
+    {
+      "AssociatePublicIpAddress": true,
+      "DeviceIndex": 0,
+      "Groups": [
+        "<groupId of the new security group created below>"
+      ]
+    }
+  ],
+  "TagSpecifications": [
+    {
+      "ResourceType": "instance",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "portfolio_server"
+        }
+      ]
+    }
+  ],
+  "MetadataOptions": {
+    "HttpEndpoint": "enabled",
+    "HttpPutResponseHopLimit": 2,
+    "HttpTokens": "required"
+  },
+  "PrivateDnsNameOptions": {
+    "HostnameType": "ip-name",
+    "EnableResourceNameDnsARecord": true,
+    "EnableResourceNameDnsAAAARecord": false
+  }
+}
+
+AuthorizeSecurityGroupIngress
+{
+  "GroupId": "<groupId of the security group created above>",
+  "IpPermissions": [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 22,
+      "ToPort": 22,
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0"
+        }
+      ]
+    }
+  ]
+}
