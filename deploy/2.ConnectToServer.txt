@@ -1,1 +1,1 @@
-ssh -i eljimodev1_portfolio_server.pem eljimodev1@54.206.231.171
+ssh -i dev3_portfolio_server_key.pem ubuntu@50.19.185.93

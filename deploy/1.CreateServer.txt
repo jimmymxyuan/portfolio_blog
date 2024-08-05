@@ -2,18 +2,19 @@ RunInstances
 {
   "MaxCount": 1,
   "MinCount": 1,
-  "ImageId": "ami-0f06718ac552afe18",
+  "ImageId": "ami-04a81a99f5ec58529",
   "InstanceType": "t2.micro",
+  "KeyName": "dev3_portfolio_server_key",
   "EbsOptimized": false,
   "BlockDeviceMappings": [
     {
-      "DeviceName": "/dev/xvda",
+      "DeviceName": "/dev/sda1",
       "Ebs": {
         "Encrypted": false,
         "DeleteOnTermination": true,
         "Iops": 3000,
-        "SnapshotId": "snap-0e5fb23b29bdb0a0c",
-        "VolumeSize": 15,
+        "SnapshotId": "snap-0e23f460473beecc6",
+        "VolumeSize": 8,
         "VolumeType": "gp3",
         "Throughput": 125
       }
@@ -34,7 +35,7 @@ RunInstances
       "Tags": [
         {
           "Key": "Name",
-          "Value": "portfolio_server"
+          "Value": "dev3_portfolio_server"
         }
       ]
     }
@@ -53,55 +54,9 @@ RunInstances
 
 CreateSecurityGroup
 {
-  "MaxCount": 1,
-  "MinCount": 1,
-  "ImageId": "ami-0f06718ac552afe18",
-  "InstanceType": "t2.micro",
-  "EbsOptimized": false,
-  "BlockDeviceMappings": [
-    {
-      "DeviceName": "/dev/xvda",
-      "Ebs": {
-        "Encrypted": false,
-        "DeleteOnTermination": true,
-        "Iops": 3000,
-        "SnapshotId": "snap-0e5fb23b29bdb0a0c",
-        "VolumeSize": 15,
-        "VolumeType": "gp3",
-        "Throughput": 125
-      }
-    }
-  ],
-  "NetworkInterfaces": [
-    {
-      "AssociatePublicIpAddress": true,
-      "DeviceIndex": 0,
-      "Groups": [
-        "<groupId of the new security group created below>"
-      ]
-    }
-  ],
-  "TagSpecifications": [
-    {
-      "ResourceType": "instance",
-      "Tags": [
-        {
-          "Key": "Name",
-          "Value": "portfolio_server"
-        }
-      ]
-    }
-  ],
-  "MetadataOptions": {
-    "HttpEndpoint": "enabled",
-    "HttpPutResponseHopLimit": 2,
-    "HttpTokens": "required"
-  },
-  "PrivateDnsNameOptions": {
-    "HostnameType": "ip-name",
-    "EnableResourceNameDnsARecord": true,
-    "EnableResourceNameDnsAAAARecord": false
-  }
+  "GroupName": "launch-wizard-1",
+  "Description": "launch-wizard-1 created 2024-08-05T11:55:02.208Z",
+  "VpcId": "vpc-055c93e9b17edafba"
 }
 
 AuthorizeSecurityGroupIngress
