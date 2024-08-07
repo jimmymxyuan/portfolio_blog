@@ -1,0 +1,20 @@
+1. Install node.js by running following commands
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+sudo npm install -g pm2
+
+2. Copy repo:
+git clone https://github.com/jimmymxyuan/portfolio_blog.git
+cd portfolio_blog
+npm install next
+npm run build
+
+3. Run the server perpetually
+pm2 start npm --name portfolio_blog -- start -p 80
+pm2 save
+pm2 resurrect
+
+Note
+The pm2 resurrect will rerun the app perpetually even after restart
+Only run this after you setup the auto-deploy in AWS
