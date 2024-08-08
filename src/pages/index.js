@@ -45,11 +45,11 @@ export default function Home() {
 
             </Col>
             <Col>
-              <p>(Cartoon Image of Jimmy working)</p>
+              <p>(Working Image Placeholder)</p>
             </Col>
           </Row>
           <Row className="content-row">
-            <Col>(Another Cartoon image of Jimmy Smiling)</Col>
+            <Col>(Smiling Image Placeholder)</Col>
             <Col>
               <Container>
                 <Row>

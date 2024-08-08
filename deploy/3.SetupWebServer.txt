@@ -5,14 +5,30 @@ sudo apt install nodejs
 sudo apt install npm
 sudo npm install -g pm2
 
-2. Copy repo:
+2. Install CodeDeploy (See https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html for more info)
+a. On the server, do the following
+sudo apt update
+sudo apt install ruby-full
+sudo apt install wget
+cd /home/ubuntu
+wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+systemctl status codedeploy-agent
+b. On the AWS console, do the following
+Create an IAM role for AWS Service CodeDeploy
+Create an IAM role for EC2 and CodeDeploy
+Attach IAM role for EC2 to the EC2
+
+
+3. Copy repo:
 git clone https://github.com/jimmymxyuan/portfolio_blog.git
 cd portfolio_blog
 npm install next
 npm run build
 
-3. Run the server perpetually
-pm2 start npm --name portfolio_blog -- start -p 80
+4. Run the server perpetually
+sudo pm2 start npm --name portfolio_blog -- start
 pm2 save
 pm2 resurrect
 
