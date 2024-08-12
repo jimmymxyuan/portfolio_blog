@@ -1,1 +1,7 @@
 ssh -i dev3_portfolio_server_key.pem ubuntu@50.19.185.93
+
+Note
+Can't use the key straight away, need to make it only usable by current user 
+in the permissions. 
+In linux, can use chmod 400 key-pair-name.pem
+In Windows, right click go properties, Security > Advanced`1`       `

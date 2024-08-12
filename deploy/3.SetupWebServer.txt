@@ -1,3 +1,5 @@
+Most instructions are from https://www.freecodecamp.org/news/ci-cd-pipeline-for-nextjs-app-with-aws/
+
 ### Server setup ###
 1. Install node.js by running following commands
 sudo apt update
@@ -5,7 +7,25 @@ sudo apt install nodejs
 sudo apt install npm
 sudo npm install -g pm2
 
-2. Install CodeDeploy (See https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html for more info)
+2. Copy repo:
+git clone https://github.com/jimmymxyuan/portfolio_blog.git
+cd portfolio_blog
+npm install next
+npm run build
+
+3. Redirect port 80 to port 3000 to avoid having to use sudo everytime to host port 80
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
+
+4. Run the server perpetually
+pm2 start npm --name portfolio_blog -- start
+pm2 save
+pm2 resurrect
+
+Note
+The pm2 resurrect will rerun the app perpetually even after restart
+Only run this after you setup the auto-deploy in AWS
+
+5. Install CodeDeploy (See https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html for more info)
 a. On the server, do the following
 sudo apt update
 sudo apt install ruby-full
@@ -19,22 +39,11 @@ b. On the AWS console, do the following
 Create an IAM role for AWS Service CodeDeploy
 Create an IAM role for EC2 and CodeDeploy
 Attach IAM role for EC2 to the EC2
+Restart instance
+Go to CodeDeploy and Create an application as EC2/On-premises
+Create deployment group, with the AWS Service Codedeploy IAM role
+Create Pipe Line, with connection setup to Github
 
-
-3. Copy repo:
-git clone https://github.com/jimmymxyuan/portfolio_blog.git
-cd portfolio_blog
-npm install next
-npm run build
-
-4. Run the server perpetually
-sudo pm2 start npm --name portfolio_blog -- start
-pm2 save
-pm2 resurrect
-
-Note
-The pm2 resurrect will rerun the app perpetually even after restart
-Only run this after you setup the auto-deploy in AWS
 
 ### AWS Setup ###
 1. Add inbounb rule for HTTP, HTTPS and Custom TCP of 3000
