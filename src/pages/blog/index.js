@@ -32,7 +32,7 @@ export default function Blog({ allPostsData }) {
         </div>
         <div className = 'content'>
             <section className={Styles.headingMd}>
-                <p>Welcome to Jimmy&aps;s Blog</p>
+                <p>Welcome to Jimmy's Blog</p>
                 <p>
                 Jimmy learnt this from going through different nextjs learning materials
                 which he uses to practise his full-stack web development skills
