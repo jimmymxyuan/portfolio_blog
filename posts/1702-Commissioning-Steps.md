@@ -1,6 +1,6 @@
 ---
 title: 'Commissioning Steps in detail'
-date: '2016-12-20'
+date: '2017-02-16'
 ---
 
 As an automation engineer, our commissioning steps starts like this. We first go to site and inspects the area. Then we perform the installation if needed for the default cards as well as the PLC. The electrical cabinet should be installed by the electricians already but we do need to make sure that they are installed properly and have the correct components. We might need to sort that out with the electrical engineers as well as the electricians if anything wrong.

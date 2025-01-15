@@ -1,6 +1,6 @@
 ---
 title: 'Cost Benefit of using HART Enabled PLC IO Cards'
-date: '2016-12-20'
+date: '2017-01-11'
 ---
 
 The factory has a series of instruments which measures things such as pressure, height and weight of various tanks into electrical signals as 4 to 20 milliamps. The signal is then plugged into an IR card which is then fed to the PLC. 

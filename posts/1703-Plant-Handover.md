@@ -1,6 +1,6 @@
 ---
 title: 'Plant Handover'
-date: '2016-12-20'
+date: '2017-03-26'
 ---
 
 The plant handover process can be very delicate after the acceptance has passed and the operators are trained. Usually will take most of the engineers away from site if not all the engineers including myself. However site or the customers would like to have us engineers to be outside as long as possible to make sure that and they're operating smoothly because there are often issues not from the system itself but through the operators not being used to the system as well. So they might have been referring the system from their previous site and which being said there will be a lot of user errors when that happens. They want us to saw that out as soon as possible as far as I'm making potential changes to suit what they need 
