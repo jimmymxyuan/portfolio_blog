@@ -3,7 +3,7 @@ title: 'Automation Design'
 date: '2017-04-07'
 ---
 
-I have started helping Glenn on a new project called Pactum Ambient Drinking Yoghurt. Previously I have only ever jumped in with other projects half way through, so helping with this project gives me an insight of the entire process of working on a project, at least from an automation engineer's point of view.
+I have started helping Glenn on a new project called Pactum Ambient Drinking Yoghurt. Previously I have only ever jumped in with other projects half way through, so helping with this project gives me an insight of the entire process of working on a project, at least from an automation engineer&apos;s point of view.
 
 We start by analysing the project as whole, estimating how much work is involved, by going through a general macro view of the portion of the plant involved for the project. 
 
