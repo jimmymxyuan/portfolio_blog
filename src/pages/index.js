@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Typewriter from "@/components/Typewriter";
 import Wave from "@/components/wave"
 import Layout from '@/components/layout';
+import Image from 'next/image';
 
 
 const typeWriter = [
@@ -45,15 +46,22 @@ export default function Home() {
 
             </Col>
             <Col>
-              <p>(Working Image Placeholder)</p>
+              <div className="div_centre">
+                <Image
+                      priority
+                      src="/images/avatar_work.png"
+                      height={231}
+                      width={231}
+                      alt=""
+                  />
+              </div>
             </Col>
           </Row>
           <Row className="content-row">
-            <Col>(Smiling Image Placeholder)</Col>
             <Col>
               <Container>
                 <Row>
-                  <h1 className="heading-name">Let me tell you a bit about myself... </h1>
+                  <h1 className="heading-name">Let me tell you a bit about myself.</h1>
                 </Row>
                 <Row>
                   <p>My fields of interests are very broad, and consider myself a <span className="blue">jack of all trades</span> in various fields among Engineering and IT</p>
@@ -70,6 +78,18 @@ export default function Home() {
                   </p>
                 </Row>
               </Container>
+            </Col>
+            <Col>
+                  <div className="div_centre">
+                    <Image
+                        priority
+                        src="/images/avatar_smile.png"
+                        height={231}
+                        width={231}
+                        alt=""
+                    />
+                  </div>
+
             </Col>
           </Row>
           <Row className="content-row">
