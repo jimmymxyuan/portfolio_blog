@@ -7,6 +7,7 @@ import Typewriter from "@/components/Typewriter";
 import Wave from "@/components/wave"
 import Layout from '@/components/layout';
 import Image from 'next/image';
+import Particle from "@/components/particle";
 
 
 const typeWriter = [
@@ -28,8 +29,7 @@ export default function Home() {
         <meta name="description" content="Jimmy's Portfolio site with his personal blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main>
-        <Container className="content" >
+        <Container className="home-content" >
           <Row className="content-row">
             <Col>
               <h1 className="heading">
@@ -98,7 +98,6 @@ export default function Home() {
             </Container>
           </Row>
         </Container>
-      </main>
     </Layout>
     </SSRProvider>
   );
