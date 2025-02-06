@@ -7,7 +7,6 @@ import Typewriter from "@/components/Typewriter";
 import Wave from "@/components/wave"
 import Layout from '@/components/layout';
 import Image from 'next/image';
-import Particle from "@/components/particle";
 
 
 const typeWriter = [

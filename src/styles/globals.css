@@ -28,7 +28,7 @@ main {
  */
 
  .content {
-  padding: 10px 100px 10px 100px;
+  padding: 10px 10px 10px 10px;
 }
 
 .home-content {
@@ -36,7 +36,7 @@ main {
 }
 
 .content-row {
-  padding: 200px 10px 10px 10px
+  padding: 100px 10px 10px 10px
 
  }
 
@@ -53,6 +53,7 @@ main {
   }
 
   div.div_centre {
+    padding: 0px 10px 10px 10px;
     text-align: center;
     margin: auto;
     width: 50%;
