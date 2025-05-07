@@ -40,10 +40,10 @@ export default function Projects() {
             <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={project3_image}
-                title="Jimmy's Toolbox"
-                description="A toolbox site with a series of python scripts as the backend api and react as front end"
-                githubLink="https://github.com/jimmymxyuan/jimmystoolbox"
-                demoLink="https://jimmystoolbox.com"
+                title="React Chat"
+                description="A Real-time Chat App that utilizes Firebases Google Authentication to login using Gmail as users, and sends/stores messages to Firebases online database in a global chat"
+                githubLink="https://github.com/jimmymxyuan/react-chat"
+                demoLink="https://react-chat-peach-iota.vercel.app"
               />
             </Col>
           </Row>

@@ -18,7 +18,7 @@ main {
   padding: 0px
 }
 
- .blue {
+.blue {
   color: rgb(150, 150, 252);
 }
 
@@ -27,38 +27,36 @@ main {
  * Content body
  */
 
- .content {
+.content {
   padding: 10px 10px 10px 10px;
 }
 
 .home-content {
- padding: 10px 100px 10px 100px;
+  padding: 10px 100px 10px 100px;
 }
 
 .content-row {
   padding: 100px 10px 10px 10px
+}
 
- }
-
- div.top-content {
+div.top-content {
   padding: 100px 0px 100px 0px;
 }
 
-  .project-container {
-    padding: 100px 100px 100px 100px;
-  }
+.project-container {
+  padding: 100px 100px 100px 100px;
+}
 
-  .empty_space {
-    padding: 300px 200px 0px 200px;
-  }
+.empty_space {
+  padding: 200px 100px 0px 100px;
+}
 
-  div.div_centre {
-    padding: 0px 10px 10px 10px;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-
-  }
+div.div_centre {
+  padding: 0px 10px 10px 10px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
 
 
 /**

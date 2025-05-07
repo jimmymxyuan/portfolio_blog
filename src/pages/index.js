@@ -56,6 +56,7 @@ export default function Home() {
               </div>
             </Col>
           </Row>
+          <Row className="empty_space"></Row>
           <Row className="content-row">
             <Col>
               <Container>
@@ -91,6 +92,7 @@ export default function Home() {
 
             </Col>
           </Row>
+          <Row className="empty_space"></Row>
           <Row className="content-row">
             <Container>
               <Row className="social-media"><h1>FIND ME ON</h1></Row>

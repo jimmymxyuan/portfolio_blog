@@ -6,11 +6,11 @@ import { BsGithub } from "react-icons/bs";
 
 function ProjectCard(data) {
     return (
-        <Card className="project-card">
+        <Card>
             <Card.Img variant="top" src={data.imgPath} />
             <Card.Body>
             <Card.Title>{data.title}</Card.Title>
-            <Card.Text>
+            <Card.Text style={{ height: '6rem' }}>
                 {data.description}
             </Card.Text>
             <Button variant="primary" href={data.demoLink} >
