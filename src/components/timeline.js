@@ -76,6 +76,12 @@ export default function Timeline() {
                     <p className={styles.timeline_paragraph}>Baby Oliver was born early this year, Jimmy finally became a dad. He had gained new found wisdoms and decided that in order to best support his family, he would need to upskill and specialise. He created a few webapps including this portfolio site, and practised hosting them on AWS and created various pipelines to automate the build and deploy process, aiming to specialise in DevOps fields and wish to eventually become a Cloud Architect</p>
                 </div>
             </div>
+            <div className={styles.timeline_container_left}>
+                <div className={styles.timeline_content}>
+                    <h2 className={styles.timeline_heading}>2025</h2>
+                    <p className={styles.timeline_paragraph}>Oliver became 2 years old, and talked a lot, just his mother. Unfortunately for Jimmy, Tech industry was getting tough for a change, and his company was one of the few that is actually getting busier. Between all the work related travels and overtimes as well as being a busy dad and teaching Oliver various things about life, he was too busy finding a more specialised job. However, it did not stop him from upskilling and gaining a variety of experiences, he became a AWS Certified Developer Associate and was on his way to become a AWS Devops Professional. He has also experimented on a few different new webapp projects, and tried out various new cloud related related technologies, hoping to one day make use of his new skills to better support his family.  </p>
+                </div>
+            </div>
         </div> 
         );
 }
