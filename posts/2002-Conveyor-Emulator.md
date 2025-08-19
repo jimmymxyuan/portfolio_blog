@@ -1,6 +1,6 @@
 ---
 title: 'Conveyor Emulator'
-date: '2020-01-26'
+date: '2020-02-18'
 ---
 
 In order to test the Warehouse Control System (WCS) Software for Dematic, a lot of work had been put in simulating the conveyor system in a virtual environment, allowing us to emulate loading a lot of totes into the system without any physical work. At the time I joined, there were 3 simulation options for the project, each were used in different circumstances depending on the project.
