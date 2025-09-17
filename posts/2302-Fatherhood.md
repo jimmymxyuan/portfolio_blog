@@ -1,0 +1,15 @@
+---
+title: 'Fatherhood'
+date: '2023-02-17'
+---
+
+Today I became a father, it was an overwhelming day, filled with emotions, but my wife, my son and I made it through ok. I always thought the scene of a new father seeing his child for the first time in the movies being overly emotional were exaggerated, but after experiencing this myself, it was pretty spot on. Hearing my son crying for the first time in his life as the world welcomes him, then seeing he calm down when he laid next to his mother, curiously observing the world, it seemed to have triggered something inside of me, added some extra functions to now protect him with all I have. 
+
+
+We came to the hospital the night prior, as it was marked the due date by the doctor. Nothing happened to my wife that night, so the doctor instructed to start putting some medicine to induce the birth. In hindsight, we should have not done that, but simply waited out a few days at home, as my family had a history of late births. As my wife started to feel the effect of the medicine, the child stirred inside her, and started the birthing process. Unfortunately, she was opening up too slowly throughout the night and my son seemed eager to come out, and already contaminated the amniotic fluid. So the doctors had to make a call to perform a c-section delivery instead. 
+
+
+I was with her the whole time but feeling very helpless, as there was almost nothing I could do except for constantly reassuring her that everything will be alright, and try my best to provide what she needed to ease her pain. During the c-section, even though she was partially anesthetized and could feel no pain, she cried throughout the operation due to the fear of unknown. The procedure was actually very fast, only took 15 minutes to open her up and got our son out to say hello world in an deafening cry, and it took another 15 minutes to close her up, while that was happening the doctors brought me to cut the umbilical cord. My hands shaked a little but managed to complete the task, and as soon as they wrapped up the baby and brought him to his mother, both of them stopped crying, staring at each other peacefully in a blissful moment while the doctors worked their magic on the operating table. It was an experience I would never forget. 
+
+
+We spent another 4 days at the hospital, took turns looking after our son, and learning our roles as new parents. I did many first-time things with him, wrapped him up for the first time, changed him him for the first time, and bathed him for the first time. He also had a Jaundice condition after 2 days, and we had to send him to ICU and receive blue light treatment to help him not becoming a Simpsons character. We had very little sleep over those few days, and they felt like a long dream afterwards. However, we finally was able to get discharged with a healthy baby and ready our new chapter in life as a complete family. 
