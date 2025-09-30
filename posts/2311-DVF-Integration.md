@@ -1,0 +1,12 @@
+---
+title: 'DVF Integration'
+date: '2023-11-15'
+---
+
+The Metcash project had a very long delayed time frame, this was both a blessing and a curse. The good thing about it was that we can plan it well early on and book the appropriate team for the tasks needed to complete the projects, and various testing tools and emulations can be prepared well ahead of the schedule as well. However, the bad thing was that due to the delayed nature of the project, the priority for it were often much lower than other projects, meaning the development and emulation team may prioritise other projects instead of this one. 
+
+
+One example for this was the development of Dematic Virtual Facility (DVF) emulator for Metcash, it was planned very early on, and developed well before it was required by another team in England. I was able to utilize the early availability of it to prepare interfaces to it. The emulator was able to induct product totes and order cartons by itself, but it required Warehouse Control System (WCS) input to print the barcode and determine the ID for the order carton. This means I had to emulator the printing process, by deleting the inducted totes when I receive the printing message, and then add back the tote using the barcode as the ID. Similarly, the product totes inducted automatically also required some minor modifications such as adding in the orientation digit and updating the weight to be used correctly by the multishuttle system. Since we had this tool quite early on, we were able to get the functional requirements done a long time before stress testing the system. 
+
+
+However the emulator was not heavily used until late into the project due to various delays and other priorities. By then, the development team was already focusing on other projects, and had very little resources to sort out additional issues for this one discovered only after running a lot of volume tests near commissioning. In addition to that, the development team for DVF was based in England, the timezone difference made conveying issues over very different, and could take several days of back and forward emailing to get the issues sorted, which proved a major challenge on difficult issues. In the end, we were able to overcome these issues by a combination of pressuing the other team for critical issues, and making workarounds using local testing tools to get what we needed for the volume tests. 
